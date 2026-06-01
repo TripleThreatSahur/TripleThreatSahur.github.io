@@ -5,3 +5,10 @@ color: blue;
 h3 {
 color: CornflowerBlue;
 }
+
+.columns2{grid-column-start}
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
