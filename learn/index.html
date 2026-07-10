@@ -1,0 +1,62 @@
+<!-- You may notice that this file is index.html, but the URL only shows "TripleThreatSahur.github.io/practice-pages/". This is because index.html is the default page that the browser looks for when it follows a link. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Practice Pages</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- This is a comment in HTML! -->
+</head>
+  <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../" style="justify-content: center; display: flex;">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="lightgray"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+          Back to your site</a></li>
+        <li style="font-weight: bold; font-size: 2rem">Learn Web Dev</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+      <h1>Practice Pages</h1>
+      <p>Hey there! These pages are a collection of practice scenarios for you to learn the basics of HTML elements and formatting. One of my favorite things about IntelliJ IDEA is the built-in viewer for HTML. It allows you to see what is currently on the page and how it looks without having to "push" (Or send) your code to GitHub and wait for it to load. This lets you make your computer your development sandbox, while GitHub holds your working code.</p>
+
+      <div class="ide-screenshot">
+          <!-- This element is an image. src, or "source" tells the element where to find the file to render; alt, or "alt text" tells the element what text to render if it cannot find the image. This is an example of a relative file path, which is how it would navigate from the folder that this index.html is stored in. -->
+          <img src="images/htmlviewer.png" alt="The HTML Viewer in IntelliJ IDEA is found in the top right corner of the workspace." />
+          <span>The HTML View in IntelliJ IDEA is found in the top right corner of the workspace.</span>
+      </div>
+
+      <h2>Examples</h2>
+      <!-- This is an "unordered list" element. As an alternative, you can use "ol" for an ordered list (Numbers!) -->
+      <ul>
+        <!-- This is a "list item" containing an "anchor" element. An anchor tag is rendered as a "hyperlink", which you can use to redirect a user to another page anywhere on the internet or on your own site. "href" specifies the "target" URL to send them to, which can be a relative file path, or a full URL. Inside the anchor tag is the text that is displayed. -->
+        <li><a href="exercise-1/recipe.html">Exercise 1</a> - Write a recipe in HTML</li>
+      </ul>
+
+      <h2>Resources</h2>
+      <p>Below are some resources that I use. Feel free to look at some or all of them to help answer questions you might have. If you want to use IntelliJ Ultimate, you can use GitHub to get a student account.</p>
+      
+      <h3>Basics</h3>
+      <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web">MDN, easily find concise explanations</a></li>
+          <li><a href="https://www.w3schools.com/">W3Schools, easily find documentation on different languages</a></li>
+          <li><a href="https://caniuse.com/">CanIUse, check whether a feature is supported in a specific browser</a></li>
+      </ul>
+      
+      <h3>Modern Tools & Automation</h3>
+      <ul>
+          <li><a href="https://vite.dev/">Vite, a common tool for building websites and web apps</a></li>
+          <li><a href="https://tailwindcss.com/">TailwindCSS, simplify written CSS</a></li>
+          <li><a href="https://www.typescriptlang.org/">Typescript, improvements to JavaScript</a></li>
+          <li><a href="https://www.jetbrains.com/help/idea/discover-intellij-idea.html">IntelliJ IDEA, manual for features of the code editor</a></li>
+      </ul>
+  </main>
+  <footer>
+      <span>&copy; 2026 Daniel Checketts</span>
+      <a href="https://dchecketts.github.io/learn">Learn More</a>
+  </footer>
+  </body>
+</html>
